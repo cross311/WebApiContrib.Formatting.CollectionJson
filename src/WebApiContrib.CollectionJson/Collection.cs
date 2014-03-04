@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WebApiContrib.CollectionJson
 {
-    public class Collection : ExtensibleObject
+    public class Collection
     {
         public Collection()
         {
@@ -15,41 +15,17 @@ namespace WebApiContrib.CollectionJson
             Template = new Template();
         }
 
-        public string Version
-        {
-            get { return GetValue<string>("Version"); }
-            set { SetValue("Version", value); }
-        }
+        public string Version { get; set; }
 
-        public Uri Href
-        {
-            get { return GetValue<Uri>("Href"); }
-            set { SetValue("Href", value); }
-        }
+        public Uri Href { get; set; }
 
-        public IList<Link> Links
-        {
-            get { return GetValue<IList<Link>>("Links"); }
-            set { SetValue("Links", value); }
-        }
+        public IList<Link> Links { get; set; }
 
-        public IList<Item> Items
-        {
-            get { return GetValue<IList<Item>>("Items"); }
-            set { SetValue("Items", value); }
-        }
+        public IList<Item> Items { get; set; }
 
-        public IList<Query> Queries
-        {
-            get { return GetValue<IList<Query>>("Query"); }
-            set { SetValue("Query", value); }
-        }
+        public IList<Query> Queries { get; set; }
 
-        public Template Template
-        {
-            get { return GetValue<Template>("Template"); }
-            set { SetValue("Template", value); }
-        }
+        public Template Template { get; set; }
     }
 
 }

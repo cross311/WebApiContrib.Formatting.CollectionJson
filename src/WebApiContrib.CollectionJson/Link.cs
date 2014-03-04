@@ -5,30 +5,14 @@ using System.Text;
 
 namespace WebApiContrib.CollectionJson
 {
-    public class Link : ExtensibleObject
+    public class Link
     {
-        public String Rel
-        {
-            get { return GetValue<String>("Rel"); }
-            set { SetValue("Rel", value); }
-        }
+        public String Rel { get; set; }
 
-        public Uri Href
-        {
-            get { return GetValue<Uri>("Href"); }
-            set { SetValue("Href", value); }
-        }
+        public Uri Href { get; set; }
 
-        public String Prompt
-        {
-            get { return GetValue<String>("Prompt"); }
-            set { SetValue("Promot", value); }
-        }
+        public String Prompt { get; set; }
 
-        public String Render
-        {
-            get { return GetValue<String>("Render"); }
-            set { SetValue("Render", value); }
-        }
+        public String Render { get; set; }
     }
 }

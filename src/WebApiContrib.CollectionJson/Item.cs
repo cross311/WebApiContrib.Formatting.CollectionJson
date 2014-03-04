@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WebApiContrib.CollectionJson
 {
-    public class Item : ExtensibleObject
+    public class Item
     {
         public Item()
         {
@@ -13,35 +13,15 @@ namespace WebApiContrib.CollectionJson
             Links = new List<Link>();
         }
 
-        public Uri Href
-        {
-            get { return GetValue<Uri>("Href"); }
-            set { SetValue("Href", value); }
-        }
+        public Uri Href { get; set; }
 
-        public string Rel
-        {
-            get { return GetValue<string>("Rel"); }
-            set { SetValue("Rel", value); }
-        }
+        public string Rel { get; set; }
 
-        public string Rt
-        {
-            get { return GetValue<string>("Rt"); }
-            set { SetValue("Rt", value); }
-        }
+        public string Rt { get; set; }
 
-        public IList<Data> Data
-        {
-            get { return GetValue<IList<Data>>("Data"); }
-            set { SetValue("Data", value); }
-        }
+        public IList<Data> Data { get; set; }
 
-        public IList<Link> Links
-        {
-            get { return GetValue<IList<Link>>("Links"); }
-            set { SetValue("Links", value); }
-        }
+        public IList<Link> Links { get; set; }
         
     }
 }
