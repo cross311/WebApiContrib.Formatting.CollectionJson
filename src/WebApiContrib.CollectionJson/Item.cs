@@ -34,13 +34,13 @@ namespace WebApiContrib.CollectionJson
         public IList<Data> Data
         {
             get { return GetValue<IList<Data>>("Data"); }
-            private set { SetValue("Data", value); }
+            set { SetValue("Data", value); }
         }
 
         public IList<Link> Links
         {
             get { return GetValue<IList<Link>>("Links"); }
-            private set { SetValue("Links", value); }
+            set { SetValue("Links", value); }
         }
         
     }

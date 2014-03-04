@@ -30,19 +30,19 @@ namespace WebApiContrib.CollectionJson
         public IList<Link> Links
         {
             get { return GetValue<IList<Link>>("Links"); }
-            private set { SetValue("Links", value); }
+            set { SetValue("Links", value); }
         }
 
         public IList<Item> Items
         {
             get { return GetValue<IList<Item>>("Items"); }
-            private set { SetValue("Items", value); }
+            set { SetValue("Items", value); }
         }
 
         public IList<Query> Queries
         {
             get { return GetValue<IList<Query>>("Query"); }
-            private set { SetValue("Query", value); }
+            set { SetValue("Query", value); }
         }
 
         public Template Template
